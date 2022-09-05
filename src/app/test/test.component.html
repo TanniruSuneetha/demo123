@@ -1,0 +1,10 @@
+<div>
+    <select (change)="onSelect($event)">
+        <option>select state</option>
+        <option *ngFor="let states of state" value="{{states.id}}">{{states.name}}</option>
+    </select>
+    <select>
+        <option>select city</option>
+        <option *ngFor="let cities of city" >{{cities.name}}</option>
+    </select>
+</div>
